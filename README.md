@@ -75,11 +75,11 @@
 # Комментарии от разработчика
 
 Приложение выполнено на Vue.js и одной страничке, поэтому для демонстрации использования Telegram miniapps, при нажатии на крестик приложение закрывается, для исправления можете в файле HoroscopeComponent (vue-telegram-bot-master\src\components) уберите часть кода:  
-  
-if (window.Telegram && window.Telegram.WebApp) {  
-  window.Telegram.WebApp.close();  
-}  
-  
+```bash
+   if (window.Telegram && window.Telegram.WebApp) {  
+     window.Telegram.WebApp.close();  
+   }  
+```
 и снова запустите npm run build  
   
 Уже в ходе разработке понял, что нужен будет express.js, нужно было создать дле директории frontend и backend для удобства - обратил внимание поздно, мой недочет. Если это критично, то могу исправить.
